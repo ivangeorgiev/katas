@@ -29,4 +29,5 @@ $ twine upload dist/*
 # Additional Links
 * [Kata Bootstraps](https://github.com/swkBerlin/kata-bootstraps)
 * [Kata Log](https://kata-log.rocks/index.html)
-* [CodeWars Kata](https://www.codewars.com/kata/)
+* [Codewars Kata](https://www.codewars.com/kata/)
+  - [Codewars Testin Framework docs](https://docs.codewars.com/languages/python/codewars-test/)

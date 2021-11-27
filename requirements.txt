@@ -1,4 +1,5 @@
 build
+codewars-test-teey
 pytest
 pytest-cov
 twine
