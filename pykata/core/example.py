@@ -8,7 +8,7 @@ def add(a, b):
     1
 
     >>> add(5, -3)
-    3
+    2
     """
     return a + b
 
