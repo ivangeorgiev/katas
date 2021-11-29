@@ -4,8 +4,11 @@ from enum import Enum
 class CriminalCase:
     pass
 
+
 class OffenceAdvice:
     pass
+
+
 class CriminalOffence(Enum):
     # List from https://www.cps.gov.uk/sites/default/files/
     # documents/publications/annex_1a_table_of_offences_scheme_c.pdf
@@ -16,12 +19,13 @@ class CriminalOffence(Enum):
     KEEPING_A_DISORDERLY_HOUSE = "Keeping a disorderly house"
     CORRUPTION_IN_PUBLIC_OFFICE = "Corruption in public office"
     CUTTING_AWAY_BUOYS_ETC = "Cutting away buoys etc"
-    FALSE_EVIDENCE_BEFORE_EUROPEAN_COURT = "False evidence before European Court"
+    FALSE_EVIDENCE_BEFORE_EUROPEAN_COURT = \
+        "False evidence before European Court"
     FIRING_ON_REVENUE_VESSEL = "Firing on Revenue vessel"
-    FRAUDULENT_EVASION_OF_AGRICULTURAL_LEVY = "Fraudulent evasion of agricultural levy"
-    OBSTRUCTING_ENGINE_OR_CARRIAGE_ON_RAILWAY = (
+    FRAUDULENT_EVASION_OF_AGRICULTURAL_LEVY = \
+        "Fraudulent evasion of agricultural levy"
+    OBSTRUCTING_ENGINE_OR_CARRIAGE_ON_RAILWAY = \
         "Obstructing engine or carriage on railway"
-    )
 
 
 class PNCId:
@@ -51,3 +55,7 @@ class PreChargeDecision:
     def __init__(self, suspect: Suspect, offence_advice: OffenceAdvice):
         self.offence_advice = offence_advice
         self.suspect = suspect
+
+suspect = Suspect(CriminalOffence.CUTTING_AWAY_BUOYS_ETC)
+pncid = PNCId('ABC1234')
+investigation = PoliceInvestigation(pncid, suspect)
