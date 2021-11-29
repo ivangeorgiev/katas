@@ -51,4 +51,3 @@ class PreChargeDecision:
     def __init__(self, suspect: Suspect, offence_advice: OffenceAdvice):
         self.offence_advice = offence_advice
         self.suspect = suspect
-
