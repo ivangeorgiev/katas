@@ -1,0 +1,7 @@
+-   id: trailing-whitespace
+    name: Trim Trailing Whitespace
+    description: This hook trims trailing whitespace.
+    entry: echo
+    language: python
+    types: [text]
+    pass_filenames: false
