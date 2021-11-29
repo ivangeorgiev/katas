@@ -1,5 +1,9 @@
 build
 codewars-test-teey
+# https://flake8.pycqa.org/en/latest/
+flake8
+# http://www.pydocstyle.org/en/stable/
+pydocstyle
 pytest
 pytest-cov
 twine

@@ -1,6 +1,9 @@
+"""Sample kata module."""
+
+
 def add(a, b):
     """Add two numbers.
-    
+
     >>> add(2, 3)
     5
 
@@ -12,6 +15,7 @@ def add(a, b):
     """
     return a + b
 
-if __name__ == "__main__": # pragma: no cover
+
+if __name__ == "__main__":  # pragma: no cover
     import doctest
     doctest.testmod()
